@@ -2,6 +2,8 @@ package com.marvel999.pepstudytask
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.marvel999.pepstudytask.Repo.GetScienceData
+import com.marvel999.pepstudytask.viewmodel.MainActivityViewModel
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -21,4 +23,13 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.marvel999.pepstudytask", appContext.packageName)
     }
+
+    // getting data from json file
+    @Test
+    fun getdata(){
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext;
+        assertNotNull(GetScienceData().getScienceData(appContext,"science.json"));
+    }
+
+
 }
