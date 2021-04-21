@@ -7,6 +7,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.marvel999.pepstudytask.Repo.GetScienceData
+import com.marvel999.pepstudytask.Repo.ScienceRepo
 import com.marvel999.pepstudytask.Repo.dataclass.Ability
 import com.marvel999.pepstudytask.Repo.dataclass.ScienceData
 import com.marvel999.pepstudytask.Repo.fatchdata.Utills
@@ -14,10 +16,9 @@ import com.marvel999.pepstudytask.Repo.fatchdata.Utills
 class MainActivityViewModel:ViewModel() {
     var _scienceData = MutableLiveData<List<Ability>>();
     val scienceData:LiveData<List<Ability>> =_scienceData;
-
     fun getScienceData(context: Context, fileName: String){
-        val jsonFileString = Utills.getJsonDataFromAsset(context, fileName)
-//        Log.i("data", jsonFileString.toString())
+        val getScienceRepo= GetScienceData();
+        val jsonFileString = getScienceRepo.getScienceData(context, fileName)
         val gson = Gson()
         val listScienceType = object : TypeToken<ScienceData>() {}.type
 
