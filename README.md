@@ -9,9 +9,14 @@ Demo app:- https://drive.google.com/file/d/1vZgAH5dxp5AT7p_cHcfElB5wDau8zqex/vie
 1. Android
 2. kotlin
 3. MVVM
+4. Junit
 
 ## Library(Dependency) Used
 1. Gson
 2. Android CardView
+
+## Testing
+1. instumentation testing
+2. Tested on samsung m31, Realme X, Readme note 5
 
 ## Thank you
