@@ -3,6 +3,8 @@
 
 This Repo contains pepstudy task for the android app developer profile.
 
+Demo app:- https://drive.google.com/file/d/1vZgAH5dxp5AT7p_cHcfElB5wDau8zqex/view?usp=drivesdk
+
 ## Tech stack
 1. Android
 2. kotlin
