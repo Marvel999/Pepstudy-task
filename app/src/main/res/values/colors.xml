@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
 <!--    App circular progress bar color-->
+    <color name="screen_bg">#FBFAFF</color>
     <color name="dark_yellow">#ECB705</color>
     <color name="lite_yellow">#FDF1D9</color>
     <color name="dark_blue">#9285FF</color>
