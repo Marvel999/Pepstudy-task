@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    App circular progress bar color-->
+    <color name="dark_yellow">#ECB705</color>
+    <color name="lite_yellow">#FDF1D9</color>
+    <color name="dark_blue">#9285FF</color>
+    <color name="lite_blue">#EDECFE</color>
+    <color name="dark_red">#FF565D</color>
+    <color name="lite_red">#FFE4E1</color>
+    <color name="dark_green">#2FD9A4</color>
+    <color name="lite_green">#DEF9F3</color>
+
+<!--    Text color-->
+    <color name="dark_text_color">#505050</color>
+    <color name="lite_text_color">#505050</color>
+
+
+
+</resources>
