@@ -14,10 +14,11 @@ import com.marvel999.pepstudytask.Repo.dataclass.ScienceData
 import com.marvel999.pepstudytask.Repo.fatchdata.Utills
 
 class MainActivityViewModel:ViewModel() {
-    var _scienceData = MutableLiveData<List<Ability>>();
-    val scienceData:LiveData<List<Ability>> =_scienceData;
+   private var _scienceData = MutableLiveData<List<Ability>>();
+   public val scienceData:LiveData<List<Ability>> =_scienceData;
+    private lateinit var  getScienceRepo:ScienceRepo
     fun getScienceData(context: Context, fileName: String){
-        val getScienceRepo= GetScienceData();
+        getScienceRepo = GetScienceData();
         val jsonFileString = getScienceRepo.getScienceData(context, fileName)
         val gson = Gson()
         val listScienceType = object : TypeToken<ScienceData>() {}.type
